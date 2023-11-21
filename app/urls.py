@@ -6,4 +6,5 @@ urlpatterns = [
     path('', include('genres.urls')),
     path('', include('actors.urls')),
     path('', include('movies.urls')),
+    path('', include('reviews.urls')),
 ]
