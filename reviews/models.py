@@ -1,3 +1,6 @@
 from django.db import models
+from movies.models import Movie
 
-# Create your models here.
+
+class Review(models.Model):
+    movie = models.ForeignKey(Movie, on_delete=)
