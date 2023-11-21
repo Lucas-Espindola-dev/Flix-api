@@ -11,3 +11,6 @@ class Review(models.Model):
             MaxValueValidator(5, 'The valuation must not be superior to 5'),
         ])
     comment = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return self.movie
