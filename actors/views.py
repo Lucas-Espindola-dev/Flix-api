@@ -11,6 +11,7 @@ class ActorCreateListView(generics.ListCreateAPIView):
 
 
 class ActorRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    permission_classes = (IsAuthenticated,)
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
 
