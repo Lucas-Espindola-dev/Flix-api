@@ -15,3 +15,11 @@ class MoviesRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (IsAuthenticated, GlobalDefaultPermission,)
     queryset = Movie.objects.all()
     serializer_class = MovieModelSerializer
+
+
+class MovieStatsAPI(generics.ListAPIView):
+    permission_classes = (IsAuthenticated, GlobalDefaultPermission,)
+    queryset = Movie.objects.all()
+
+    def get(self, request):
+        ...
