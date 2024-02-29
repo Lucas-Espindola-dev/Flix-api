@@ -6,4 +6,4 @@ class ActorsAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'nationality',)
 
 
-admin.site.register(Actor,ActorsAdmin)
+admin.site.register(Actor, ActorsAdmin)
